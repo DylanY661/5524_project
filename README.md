@@ -24,14 +24,14 @@ unzip embeddings.zip
 
 The following files should be present after extraction:
 
-| Dataset | File | Required Keys |
-|---------|------|---------------|
-| ImageNet-1K | `imagenet_clip_embeddings.pt` | `test_embeddings`, `test_labels` |
-| ImageNet-1K | `imagenet_dino_embeddings.pt` | `test_embeddings` |
-| ImageNet-R | `imagenet_r_clip_embeddings.pt` | `embeddings`, `class_names` |
-| ImageNet-R | `imagenet_r_dino_embeddings.pt` | `embeddings`, `labels` |
-| CIFAR-100 | `cifar100_clip_embeddings.pt` | `test_embeddings`, `test_labels` |
-| CIFAR-100 | `cifar100_dino_embeddings.pt` | `test_embeddings` |
+| Dataset | File |
+|---------|------|
+| ImageNet-1K | `imagenet_clip_embeddings.pt` |
+| ImageNet-1K | `imagenet_dino_embeddings.pt` |
+| ImageNet-R | `imagenet_r_clip_embeddings.pt` |
+| ImageNet-R | `imagenet_r_dino_embeddings.pt` |
+| CIFAR-100 | `cifar100_clip_embeddings.pt` |
+| CIFAR-100 | `cifar100_dino_embeddings.pt` |
 
 ### Checkpoints
 
@@ -85,6 +85,8 @@ depending on your OS.
 Results should print to terminal.
 
 ---
+
+Expected format and results are given in epxected_results.txt. The output fo the evaluation script should match.
 
 # Additional Arguments
 

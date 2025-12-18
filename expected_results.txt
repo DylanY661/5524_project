@@ -1,0 +1,74 @@
+/var/spool/slurmd/job42570492/slurm_script: line 14: cd: /users/PAS3162/yang6294/cv_project: No such file or directory
+Device: cuda
+Embeddings directory: embeddings
+Checkpoint directory: .
+
+############################################################
+# Evaluating: advanced_1
+############################################################
+Loading advanced_1 from ./checkpoints/mlp/best_model.pt...
+  Loaded successfully. Parameters: 1,839,617
+
+==================================================
+ImageNet-1K BENCHMARK
+==================================================
+Creating text embeddings for 1000 classes...
+ImageNet-1K Zero-Shot Accuracy: 83.60%
+
+==================================================
+ImageNet-R BENCHMARK
+==================================================
+Creating text embeddings for 200 classes...
+ImageNet-R Zero-Shot Accuracy: 69.09%
+
+==================================================
+CIFAR-100 BENCHMARK
+==================================================
+Creating text embeddings for 100 classes...
+CIFAR-100 Zero-Shot Accuracy: 56.11%
+
+============================================================
+RESULTS SUMMARY: advanced_1
+============================================================
+  ImageNet-1K: 83.60% (Zero-Shot)
+  ImageNet-R: 69.09% (Zero-Shot)
+  CIFAR-100: 56.11% (Zero-Shot)
+
+############################################################
+# Evaluating: advanced_2
+############################################################
+Loading advanced_2 from ./checkpoints/joint/best_model.pt...
+  Loaded successfully. Parameters: 3,354,624
+
+==================================================
+ImageNet-1K BENCHMARK
+==================================================
+Creating text embeddings for 1000 classes...
+ImageNet-1K Zero-Shot Accuracy: 83.02%
+
+==================================================
+ImageNet-R BENCHMARK
+==================================================
+Creating text embeddings for 200 classes...
+ImageNet-R Zero-Shot Accuracy: 64.39%
+
+==================================================
+CIFAR-100 BENCHMARK
+==================================================
+Creating text embeddings for 100 classes...
+CIFAR-100 Zero-Shot Accuracy: 50.58%
+
+============================================================
+RESULTS SUMMARY: advanced_2
+============================================================
+  ImageNet-1K: 83.02% (Zero-Shot)
+  ImageNet-R: 64.39% (Zero-Shot)
+  CIFAR-100: 50.58% (Zero-Shot)
+
+================================================================================
+COMPARISON TABLE
+================================================================================
+Model                |  ImageNet-1K |   ImageNet-R |    CIFAR-100
+-----------------------------------------------------------------
+advanced_1           |       83.60% |       69.09% |       56.11%
+advanced_2           |       83.02% |       64.39% |       50.58%

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=fusion_model
+#SBATCH --job-name=evaluate_model
 #SBATCH --account=PAS3162
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:1

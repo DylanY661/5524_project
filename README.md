@@ -92,7 +92,7 @@ Expected format and results are given in epxected_results.txt. The output fo the
 
 | Argument | Short | Type | Default | Description |
 |----------|-------|------|---------|-------------|
-| `--model` | `-m` | string | *required* | Model to evaluate. Choices: `advanced_1`, `advanced_2`, `all` |
+| `--model` | `-m` | string | `all` | Model to evaluate. Choices: `advanced_1`, `advanced_2`, `all` |
 | `--embeddings_dir` | `-e` | string | `embeddings` | Directory containing precomputed embeddings |
 | `--checkpoint_dir` | `-c` | string | `.` | Base directory for model checkpoints |
 | `--dataset` | `-d` | string | `all` | Dataset to evaluate on. Choices: `imagenet`, `imagenet-r`, `cifar100`, `all` |
